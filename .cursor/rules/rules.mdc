@@ -1,0 +1,171 @@
+---
+description: Rules for MLM in React
+globs: 
+---
+## ZocMLM Platform - Project Scope
+
+1. Core MLM Features
+
+Network Management
+
+Binary tree structure visualization
+
+Real-time network growth tracking
+
+Smart placement algorithms
+
+Power team formations
+
+Territory mapping and analytics
+
+Genealogy compression rules
+
+Network statistics and metrics
+
+Commission System
+
+Direct referral commissions
+
+Binary matching bonus
+
+Leadership bonus
+
+Rank advancement bonus
+
+Commission calculator
+
+Withdrawal management
+
+Payment gateway integration
+
+Rank System
+
+Multiple rank levels (Starter to Diamond)
+
+Rank advancement tracking
+
+Rank maintenance requirements
+
+Rank benefits and rewards
+
+Progress visualization
+
+Rank qualification metrics
+
+2. Gamification Features
+
+Achievements
+Custom achievement system
+Progress tracking
+Reward distribution
+Achievement badges
+Leaderboards
+Point system
+Challenges & Competitions
+Team challenges
+Seasonal events
+Skill trees
+NFT badges
+Progress tracking
+Reward distribution
+Training System
+Required and optional courses
+Video/document/quiz content
+Progress tracking
+Completion rewards
+Achievement integration
+Training analytics
+
+3. Financial Management
+
+Wallet System
+Multiple payment methods
+Transaction history
+Balance management
+Withdrawal requests
+Commission tracking
+Fee management
+Crypto Integration
+Token management
+Faucet system
+Airdrop campaigns
+Staking pools
+Trading platform
+Crypto wallet integration
+
+4. Administrative Features
+
+User Management
+KYC verification
+Risk assessment
+Dispute resolution
+Balance adjustments
+Account restrictions
+Activity monitoring
+System Settings
+General configuration
+Branding customization
+Communication settings
+Security settings
+Payment settings
+Feature toggles
+Marketing Tools
+Email campaigns
+SMS notifications
+Task management
+Contact management
+Template system
+Event planning
+
+5. Security & Compliance
+
+Authentication
+Multi-factor authentication
+Role-based access control
+Session management
+Password policies
+IP whitelisting
+Security logs
+Privacy & Data Protection
+GDPR compliance
+Data encryption
+Privacy preferences
+Data retention policies
+Consent management
+Data export
+
+6. Integration & API
+
+External Connections
+Webhook management
+API integrations
+CRM systems
+Payment gateways
+Marketing tools
+Analytics platforms
+Performance & Scaling
+Caching system
+Rate limiting
+Load balancing
+Database optimization
+CDN integration
+Error handling
+
+7. Frontend Features
+
+User Interface
+Responsive design
+Dark/light mode
+Custom theming
+Accessibility
+Mobile optimization
+Interactive dashboards
+Communication
+Notification system
+Real-time updates
+Chat system
+Announcement board
+Email templates
+SMS notifications
+
+This comprehensive MLM platform provides all necessary tools for network marketing operations while incorporating modern features like gamification, crypto integration, and advanced security measures. The system is designed to be scalable, secure, and user-friendly while meeting all regulatory requirements.
