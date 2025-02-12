@@ -1,149 +1,97 @@
-# ZocMLM - Modern Network Marketing Platform
+# ZocMLM - Network Marketing Platform
 
-[![Next.js](https://img.shields.io/badge/Next.js-14.2.3-000000?logo=next.js)](https://nextjs.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Security](https://img.shields.io/badge/Security-A%2B-brightgreen)](SECURITY.md)
+![Platform Dashboard Preview](public/screenshot-dashboard.png)
 
-A feature-rich MLM platform with advanced network management, gamification elements, and crypto integration.
+Enterprise-grade MLM solution with advanced network management and compensation tracking.
 
-![Platform Dashboard Preview](https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80)
+## Key Features
 
-## ✨ Key Features
+### Network Management
+- 3D Network Visualization
+- Matrix Placement System
+- Downline Auto-Balancing
+- Stagnation Risk Analysis
+- Cross-line Commission Calculation
 
-### Core MLM Engine
-- 🌐 Binary Tree Visualization with Real-time Updates
-- 💸 Multi-tier Commission System (Direct, Binary, Leadership)
-- 🏆 12-Level Rank Advancement System
-- 📊 Advanced Network Analytics Dashboard
-- 🔄 Automated Genealogy Compression
-- 📈 Performance Forecasting Tools
-
-### Gamification System
-- 🎮 Interactive Achievement System
-- 🏅 NFT-based Badges & Rewards
-- 📜 Progressive Training Modules
-- 🏁 Seasonal Team Challenges
-- 📊 Live Leaderboards
-- 🎯 Skill Tree Development Paths
-
-### Financial Ecosystem
-- 💰 Multi-currency Wallet System
-- ₿ Crypto Integration (BTC, ETH, USDT)
-- 🏦 Automated Payout Management
-- 📉 Real-time Market Data Feeds
-- 🔒 Smart Contract-based Transactions
-- 📑 Comprehensive Audit Trails
+### Compensation Plan
+- Multi-level Commissions (Unilevel/Binary)
+- Compression Algorithm
+- Reward Tier System
+- Leadership Bonuses
+- Performance Analytics
 
 ### Security & Compliance
-- 🔐 Zero-Trust Architecture
-- 🛡️ GDPR & CCPA Compliance Tools
-- 📜 Automated Legal Document Generation
-- 🔍 Real-time Suspicious Activity Monitoring
-- 🛂 Multi-factor Authentication
-- 🔄 Session Rotation System
+- KYC Document Verification
+- MFA Authentication
+- Role-based Access Control
+- GDPR-compliant Data Handling
+- Audit Logging
 
-## 👥 Role-Based Features
+## Technology Stack
 
-### Admin Role
-- 🕹️ Network Structure Overrides
-- ⚖️ Dispute Resolution Center
-- 📈 Performance Benchmarking
-- 🔄 Bulk User Operations
-- 🛠️ System Configuration Manager
-- 📊 Advanced Reporting Suite
+| Component              | Technology               |
+|------------------------|--------------------------|
+| Frontend               | Next.js 14, TypeScript   |
+| Styling                | Tailwind CSS             |
+| State Management       | Zustand                  |
+| Data Visualization     | React Force Graph 3D     |
+| AI Integration         | TensorFlow.js            |
+| Authentication         | Supabase Auth            |
+| Deployment             | Netlify                  |
 
-### User/Investor Role
-- 🌍 Global Network Viewer
-- 💹 Personal Performance Dashboard
-- 🎓 Interactive Training Portal
-- 🤖 Automated Trading Bots
-- 📱 Mobile-First Interface
-- 🗂️ Document Management System
+## Getting Started
 
-### System Manager
-- 🔄 Database Version Control
-- 🚨 Real-time System Monitoring
-- ⚡ Performance Optimization Tools
-- 🔄 CI/CD Pipeline Integration
-- 📈 Capacity Planning Dashboard
-- 🔄 Failover Management
+### Prerequisites
+- Node.js 18.x
+- Netlify CLI
+- PostgreSQL (for local development)
 
-## 🛠️ Technology Stack
-
-- **Frontend**: Next.js 14, Tailwind CSS 3.4, React 18
-- **Backend**: Node.js 20, Express, Supabase
-- **Database**: PostgreSQL 15, Redis 7
-- **Security**: JWT, OAuth 2.1, CSP 3.0
-- **Blockchain**: Solidity, Web3.js, IPFS
-- **Analytics**: Apache Superset, Metabase
-
-## 🚀 Installation
-
+### Installation
 ```bash
-# Clone repository
-git clone https://github.com/yourorg/zocmlm.git
-cd zocmlm
-
-# Install dependencies
+git clone https://github.com/your-org/zocmlm-platform.git
+cd zocmlm-platform
 npm install
+ntl login
+```
 
-# Configure environment
-cp .env.example .env.local
+### Configuration
+Create `.env` file:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_KEY=your-supabase-key
+MLM_COMMISSION_RATES=0.10,0.07,0.05,0.03
+MLM_MAX_LEVEL=15
+```
 
-# Start development server
+### Running Locally
+```bash
 npm run dev
 ```
 
-**Production Setup:** See [INSTALLATION.md](INSTALLATION.md) for cPanel deployment guide
+## Deployment
 
-## ⚙️ Configuration
-
-### Essential Environment Variables
-```env
-NEXT_PUBLIC_API_URL=https://api.yourdomain.com
-SUPABASE_URL=your-supabase-url
-SUPABASE_KEY=your-supabase-key
-BLOCKCHAIN_RPC_URL=https://mainnet.infura.io/v3/your-key
-ENCRYPTION_SECRET=your-32-char-secret
-```
-
-## 🔒 Security
-
-```mermaid
-graph TD
-    A[User Request] --> B[Rate Limiting]
-    B --> C[Input Sanitization]
-    C --> D[Authentication]
-    D --> E[Role Validation]
-    E --> F[Data Encryption]
-    F --> G[Audit Logging]
-```
-
-## 📚 API Documentation
-
-Explore our interactive API docs:  
-`https://api.yourdomain.com/docs`
-
+1. Production Build:
 ```bash
-# Generate API documentation locally
-npm run generate-docs
+npm run build
 ```
 
-## 🤝 Contributing
+2. Deploy to Netlify:
+```bash
+ntl deploy --prod --mlm-mode=advanced
+```
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
+## Commission Structure
 
-## 📄 License
+Configure in `src/store/commissionStore.ts`:
+```typescript
+const COMMISSION_RATES = [
+  { level: 1, rate: 0.10 },
+  { level: 2, rate: 0.07 },
+  { level: 3, rate: 0.05 },
+  { level: 4, rate: 0.03 }
+];
+```
 
-Distributed under the MIT License. See `LICENSE` for more information.
+## License
 
-## 🎓 Acknowledgments
-
-- Next.js Documentation Team
-- Tailwind CSS Community
-- Faker.js Maintainers
-- Web3.js Development Team
+Proprietary MLM Software License © 2024 ZocMLM
